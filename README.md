@@ -806,3 +806,326 @@ Application Completed
 - ✅ Tablet
 - ✅ Mobile Friendly
 - ✅ Bootstrap 5 Responsive Layout
+
+
+
+---
+# 🚀 Installation & Setup
+
+Follow the steps below to run the project locally.
+
+---
+
+## 📋 Prerequisites
+
+Make sure the following software is installed on your system:
+
+| Software | Version |
+|-----------|----------|
+| Java | 17+ |
+| Maven | 3.8+ |
+| Node.js | 18+ |
+| npm | 9+ |
+| MongoDB | 6.0+ |
+| Git | Latest |
+
+---
+
+# 📥 Clone the Repository
+
+```bash
+git clone https://github.com/ahmedbaiginam-stack/Management_System.git
+
+cd Management_System
+```
+
+---
+
+# ⚙ Backend Setup (Spring Boot)
+
+Navigate to the backend project.
+
+```bash
+cd backend
+```
+
+Install dependencies.
+
+```bash
+mvn clean install
+```
+
+Run the application.
+
+```bash
+mvn spring-boot:run
+```
+
+Or
+
+```bash
+Run ManagementApplication.java
+```
+
+Backend Server
+
+```
+http://localhost:8080
+```
+
+---
+
+# 🗄 MongoDB Configuration
+
+Open
+
+```
+src/main/resources/application.properties
+```
+
+Configure your MongoDB connection.
+
+```properties
+spring.data.mongodb.uri=mongodb://localhost:27017/library_db
+```
+
+Create the database
+
+```
+library_db
+```
+
+Collections will be created automatically when the application runs.
+
+---
+
+# 💻 Frontend Setup (React)
+
+Navigate to the frontend project.
+
+```bash
+cd frontend
+```
+
+Install packages.
+
+```bash
+npm install
+```
+
+Start the development server.
+
+```bash
+npm run dev
+```
+
+Frontend Server
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🔑 Default Roles
+
+The application supports two user roles.
+
+## 👤 ROLE_USER
+
+Permissions
+
+- Register
+- Login
+- Browse Books
+- Read Articles
+- Read Story Books
+- View News
+- Borrow Library Resources
+- Return Borrowed Items
+- View Dashboard
+- Ask Questions
+- Reply to Questions
+
+---
+
+## 👨‍💼 ROLE_ADMIN
+
+Permissions
+
+- Manage Books
+- Manage Users
+- Manage Articles
+- Manage News
+- Manage Questions
+- Manage Borrow Records
+- Update Library Resources
+- Delete Library Resources
+- Monitor Borrow History
+
+---
+
+# 🔐 Authentication
+
+The application uses **JWT (JSON Web Token)** for authentication.
+
+Authentication Flow
+
+```text
+Login
+   │
+   ▼
+Spring Security
+   │
+   ▼
+Generate JWT Token
+   │
+   ▼
+Store Token in Browser
+   │
+   ▼
+Access Protected APIs
+```
+
+Every protected API request automatically includes the JWT token in the request header.
+
+---
+
+# 🌐 Application URLs
+
+| Module | URL |
+|----------|--------------------------------|
+| Frontend | http://localhost:5173 |
+| Backend API | http://localhost:8080 |
+| MongoDB | mongodb://localhost:27017 |
+| Swagger *(Optional)* | http://localhost:8080/swagger-ui |
+
+---
+
+# 📡 REST API Overview
+
+## Authentication
+
+```http
+POST /api/auth/register
+POST /api/auth/login
+```
+
+---
+
+## Books
+
+```http
+GET    /api/books
+GET    /api/books/search
+GET    /api/books/{id}
+POST   /api/user/borrow/book
+```
+
+---
+
+## Articles
+
+```http
+GET    /api/features/articles
+GET    /api/features/articles/{id}
+POST   /api/user/borrow/article
+```
+
+---
+
+## Story Books
+
+```http
+GET    /api/features/storybooks
+GET    /api/features/storybooks/{id}
+POST   /api/user/borrow/storybook
+```
+
+---
+
+## News
+
+```http
+GET /api/features/news
+```
+
+---
+
+## Question Forum
+
+```http
+GET    /api/questions
+POST   /api/questions
+POST   /api/questions/{id}/reply
+```
+
+---
+
+## User Dashboard
+
+```http
+GET    /api/user/borrowed-items
+POST   /api/user/return/{borrowId}
+```
+
+---
+
+## Admin APIs
+
+```http
+GET     /api/admin/books
+POST    /api/admin/books
+PUT     /api/admin/books/{id}
+DELETE  /api/admin/books/{id}
+
+GET     /api/admin/users
+PUT     /api/admin/users/{id}
+DELETE  /api/admin/users/{id}
+
+GET     /api/admin/news
+POST    /api/admin/news
+PUT     /api/admin/news/{id}
+DELETE  /api/admin/news/{id}
+
+GET     /api/admin/articles
+POST    /api/admin/articles
+PUT     /api/admin/articles/{id}
+DELETE  /api/admin/articles/{id}
+
+GET     /api/admin/questions
+DELETE  /api/admin/questions/{id}
+
+GET     /api/admin/borrow-records
+DELETE  /api/admin/borrow-records/{id}
+```
+
+---
+
+# 📈 Performance Highlights
+
+- ⚡ Fast REST API communication using Axios
+- 🔐 Secure JWT Authentication
+- 📦 MongoDB NoSQL database
+- 📱 Fully Responsive Bootstrap UI
+- 🔄 Dynamic React Components
+- 🧩 Modular Service-Based Architecture
+- 🛡 Spring Security Role-Based Authorization
+- 📚 Real-Time Borrow Record Management
+- 💰 Automatic Fine Calculation (₹50/day after due date)
+
+---
+
+# 🧪 Testing the Application
+
+After running the project:
+
+1. Register a new user.
+2. Login using your credentials.
+3. Browse books, articles, and story books.
+4. Borrow a library resource.
+5. View your borrowed items in the User Dashboard.
+6. Return the borrowed resource.
+7. Login as an Admin.
+8. Manage books, users, articles, news, questions, and borrow records.
+9. Verify CRUD operations and role-based access.
