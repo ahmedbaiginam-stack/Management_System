@@ -1,0 +1,84 @@
+/* Navbar base */
+.navbar {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 12px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 22px;
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: rgba(255,255,255,0.85) !important;
+  margin: 0 8px;
+  font-weight: 500;
+  transition: 0.3s;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+/* Active highlight style */
+.navbar-nav .nav-link.active {
+  background: #ffffff;
+  color: #1e3c72 !important;
+}
+
+/* Dashboard buttons */
+.navbar-nav .text-warning {
+  color: #ffd369 !important;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Logout button */
+.btn-danger {
+  background: #ff4d4d;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #e60000;
+}
+
+/* Login/Register */
+.btn-light {
+  background: #ffffff;
+  color: #1e3c72;
+}
+
+.btn-warning {
+  background: #ffd369;
+  color: #000;
+}
+
+/* Mobile dropdown */
+@media (max-width: 992px) {
+  .navbar-nav {
+    background: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 10px;
+  }
+}

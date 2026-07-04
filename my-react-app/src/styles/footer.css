@@ -1,0 +1,77 @@
+/* =========================
+   FOOTER MAIN
+========================= */
+.footer {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 50px 20px 20px;
+  margin-top: 50px;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   FOOTER CONTAINER
+========================= */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* =========================
+   FOOTER HEADINGS
+========================= */
+.footer h2,
+.footer h3 {
+  margin-bottom: 12px;
+  color: #ffd369;
+}
+
+/* =========================
+   TEXT
+========================= */
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* =========================
+   LINKS
+========================= */
+.footer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 14px;
+  transition: 0.3s;
+  opacity: 0.85;
+}
+
+.footer a:hover {
+  color: #ffd369;
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* =========================
+   HOVER EFFECT (OPTIONAL GLOW)
+========================= */
+.footer:hover {
+  box-shadow: 0 -5px 25px rgba(255, 211, 105, 0.2);
+}

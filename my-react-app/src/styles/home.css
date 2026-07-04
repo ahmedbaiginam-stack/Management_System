@@ -1,0 +1,199 @@
+/* PAGE */
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+.section-card {
+  background: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+.btn-main {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #1e3c72;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  background: #2a5298;
+}
+
+.btn-small {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #ffb703;
+  color: black;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* LOADER */
+.loader {
+  text-align: center;
+  padding: 80px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #1e3c72;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}/* =========================
+   HOME CONTAINER
+========================= */
+.home-container {
+  padding: 20px;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+/* =========================
+   HERO SECTION (MODERN GRADIENT)
+========================= */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 16px;
+  color: white;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #4a90e2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* =========================
+   NEWS SECTION CARD
+========================= */
+.section-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   NEWS BOX (SPECIAL DESIGN)
+========================= */
+.news-box {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  animation: slideUp 0.6s ease-in-out;
+}
+
+.news-box h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.news-box p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

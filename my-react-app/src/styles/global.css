@@ -1,0 +1,200 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3, h4 {
+  color: #1e3c72;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button,
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Primary */
+.btn-primary {
+  background: #1e3c72;
+  color: white;
+}
+.btn-primary:hover {
+  background: #2a5298;
+}
+
+/* Success */
+.btn-success {
+  background: #28a745;
+  color: white;
+}
+.btn-success:hover {
+  background: #218838;
+}
+
+/* Danger */
+.btn-danger {
+  background: #dc3545;
+  color: white;
+}
+.btn-danger:hover {
+  background: #c82333;
+}
+
+/* Warning */
+.btn-warning {
+  background: #ffc107;
+  color: black;
+}
+.btn-warning:hover {
+  background: #e0a800;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 10px 20px;
+}
+
+.nav-link {
+  color: white !important;
+  margin: 0 8px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffd369 !important;
+}
+
+/* =========================
+   TABLES
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #1e3c72;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #f1f5ff;
+}
+
+/* =========================
+   FORMS (IMPROVED)
+========================= */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1e3c72;
+  box-shadow: 0 0 5px rgba(30, 60, 114, 0.3);
+}
+
+/* =========================
+   FORM LABELS
+========================= */
+label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* =========================
+   FOOTER (optional support)
+========================= */
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #1e3c72;
+  color: white;
+}
