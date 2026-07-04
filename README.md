@@ -99,21 +99,87 @@ The application also provides an **Admin Dashboard** for managing books, users, 
 Management_System
 │
 ├── backend
+│   │
 │   ├── controller
+│   │     ├── AdminController
+│   │     ├── AuthController
+│   │     ├── UserController
+│   │     ├── BookController
+│   │     ├── FeatureController
+│   │     └── QuestionController
+│   │
 │   ├── service
+│   │     ├── BookService
+│   │     ├── UserService
+│   │     ├── BorrowService
+│   │     ├── NewsService
+│   │     ├── ArticleService
+│   │     ├── StoryBookService
+│   │     └── QuestionService
+│   │
 │   ├── repository
+│   │     ├── BookRepository
+│   │     ├── UserRepository
+│   │     ├── BorrowRepository
+│   │     ├── NewsRepository
+│   │     ├── ArticleRepository
+│   │     ├── StoryBookRepository
+│   │     └── QuestionRepository
+│   │
 │   ├── model
+│   │     ├── User
+│   │     ├── Book
+│   │     ├── BorrowRecord
+│   │     ├── Article
+│   │     ├── StoryBook
+│   │     ├── News
+│   │     └── Question
+│   │
 │   ├── security
-│   └── config
+│   │     ├── JwtFilter
+│   │     ├── JwtUtil
+│   │     ├── SecurityConfig
+│   │     └── UserDetailsServiceImpl
+│   │
+│   └── application.properties
 │
 ├── frontend
+│   │
 │   ├── components
+│   │     ├── Navbar
+│   │     ├── Footer
+│   │     └── Layout
+│   │
 │   ├── pages
+│   │     ├── HomePage
+│   │     ├── Login
+│   │     ├── Register
+│   │     ├── Books
+│   │     ├── BookReader
+│   │     ├── Articles
+│   │     ├── ArticleReader
+│   │     ├── StoryBooks
+│   │     ├── StoryReader
+│   │     ├── News
+│   │     ├── QuestionBank
+│   │     ├── UserDashboard
+│   │     ├── AdminDashboard
+│   │     ├── ManageBooks
+│   │     ├── ManageUsers
+│   │     ├── ManageNews
+│   │     ├── ManageArticles
+│   │     ├── ManageBorrowRecords
+│   │     └── ManageQuestions
+│   │
 │   ├── services
+│   │     ├── api.js
+│   │     └── libraryService.js
+│   │
 │   ├── styles
-│   └── assets
+│   │
+│   └── App.jsx
 │
-└── screenshots
+└── MongoDB
 ```
 
 ---
