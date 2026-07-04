@@ -692,3 +692,117 @@ Application Completed
 |---------|----------------|
 | controller | REST APIs |
 | service | Business Logic |
+
+
+
+---
+
+# 📷 Application Screenshots
+
+> A quick overview of the Digital Library Management System user interface.
+
+---
+
+## 🏠 User Interface
+
+<table>
+<tr>
+<td align="center">
+<b>Home Page</b><br><br>
+<img src="./screenshots/home.png" width="420">
+</td>
+
+<td align="center">
+<b>Library Books</b><br><br>
+<img src="./screenshots/books.png" width="420">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>Book Details</b><br><br>
+<img src="./screenshots/book-details.png" width="420">
+</td>
+
+<td align="center">
+<b>Articles</b><br><br>
+<img src="./screenshots/articles.png" width="420">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>Story Books</b><br><br>
+<img src="./screenshots/stories.png" width="420">
+</td>
+
+<td align="center">
+<b>Latest News</b><br><br>
+<img src="./screenshots/news.png" width="420">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>Question Discussion</b><br><br>
+<img src="./screenshots/question.png" width="420">
+</td>
+
+<td align="center">
+<b>User Dashboard</b><br><br>
+<img src="./screenshots/user-dashboard.png" width="420">
+</td>
+</tr>
+</table>
+
+---
+
+## 👨‍💼 Administrator Panel
+
+<table>
+<tr>
+<td align="center">
+<b>Admin Dashboard</b><br><br>
+<img src="./screenshots/admin-dashboard.png" width="420">
+</td>
+
+<td align="center">
+<b>Manage Books</b><br><br>
+<img src="./screenshots/admin-books-manage.png" width="420">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>Manage Users</b><br><br>
+<img src="./screenshots/admin-user-manage.png" width="420">
+</td>
+
+<td align="center">
+<b>Manage Articles</b><br><br>
+<img src="./screenshots/admin-articales-manage.png" width="420">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>Manage News</b><br><br>
+<img src="./screenshots/admin-news-manage.png" width="420">
+</td>
+
+<td align="center">
+<b>Borrow Records</b><br><br>
+<img src="./screenshots/admin-borrow-manage.png" width="420">
+</td>
+</tr>
+</table>
+
+---
+
+## 📱 Responsive Design
+
+- ✅ Desktop
+- ✅ Laptop
+- ✅ Tablet
+- ✅ Mobile Friendly
+- ✅ Bootstrap 5 Responsive Layout
