@@ -122,105 +122,79 @@ Management_System
 
 ## 🏠 Home Page
 
-```
-src/main/resources/screenshots/home.png
-```
+![Home Page](src/main/resources/screenshots/home.png)
 
 ---
 
-## 📚 Books
+## 📚 Book Details
 
-```
-src/main/resources/screenshots/book-details.png
-```
+![Book Details](src/main/resources/screenshots/book-details.png)
 
 ---
 
 ## 📰 Articles
 
-```
-src/main/resources/screenshots/articles.png
-```
+![Articles](src/main/resources/screenshots/articles.png)
 
 ---
 
 ## 📖 Story Books
 
-```
-src/main/resources/screenshots/stories.png
-```
+![Story Books](src/main/resources/screenshots/stories.png)
 
 ---
 
 ## 📰 News
 
-```
-src/main/resources/screenshots/news.png
-```
+![News](src/main/resources/screenshots/news.png)
 
 ---
 
 ## ❓ Question Bank
 
-```
-src/main/resources/screenshots/question.png
-```
+![Question Bank](src/main/resources/screenshots/question.png)
 
 ---
 
 ## 👤 User Dashboard
 
-```
-src/main/resources/screenshots/user-dashboard.png
-```
+![User Dashboard](src/main/resources/screenshots/user-dashboard.png)
 
 ---
 
 ## 👨‍💼 Admin Dashboard
 
-```
-src/main/resources/screenshots/admin-dashboard.png
-```
+![Admin Dashboard](src/main/resources/screenshots/admin-dashboard.png)
 
 ---
 
 ## 📚 Manage Books
 
-```
-src/main/resources/screenshots/admin-books-manage.png
-```
+![Manage Books](src/main/resources/screenshots/admin-books-manage.png)
 
 ---
 
 ## 👥 Manage Users
 
-```
-src/main/resources/screenshots/admin-user-manage.png
-```
+![Manage Users](src/main/resources/screenshots/admin-user-manage.png)
 
 ---
 
 ## 📰 Manage News
 
-```
-src/main/resources/screenshots/admin-news-manage.png
-```
+![Manage News](src/main/resources/screenshots/admin-news-manage.png)
 
 ---
 
 ## 📝 Manage Articles
 
-```
-src/main/resources/screenshots/admin-articales-manage.png
-```
+![Manage Articles](src/main/resources/screenshots/admin-articales-manage.png)
 
 ---
 
 ## 📖 Borrow Records
 
-```
-src/main/resources/screenshots/admin-borrow-manage.png
-```
+![Borrow Records](src/main/resources/screenshots/admin-borrow-manage.png)
 
 ---
 
