@@ -699,7 +699,7 @@ Application Completed
 
 # 📷 Application Screenshots
 
-> A quick overview of the Digital Library Management System user interface.
+> Below are some screenshots showcasing the Digital Library Management System.
 
 ---
 
@@ -709,48 +709,48 @@ Application Completed
 <tr>
 <td align="center">
 <b>Home Page</b><br><br>
-<img src="./screenshots/home.png" width="420">
+<img src="./src/main/resources/screenshots/home.png" width="420"/>
 </td>
 
-<td align="center">
-<b>Library Books</b><br><br>
-<img src="./screenshots/books.png" width="420">
-</td>
-</tr>
-
-<tr>
 <td align="center">
 <b>Book Details</b><br><br>
-<img src="./screenshots/book-details.png" width="420">
+<img src="./src/main/resources/screenshots/book-details.png" width="420"/>
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <b>Articles</b><br><br>
-<img src="./screenshots/articles.png" width="420">
+<img src="./src/main/resources/screenshots/articles.png" width="420"/>
 </td>
-</tr>
 
-<tr>
 <td align="center">
 <b>Story Books</b><br><br>
-<img src="./screenshots/stories.png" width="420">
-</td>
-
-<td align="center">
-<b>Latest News</b><br><br>
-<img src="./screenshots/news.png" width="420">
+<img src="./src/main/resources/screenshots/stories.png" width="420"/>
 </td>
 </tr>
 
 <tr>
 <td align="center">
-<b>Question Discussion</b><br><br>
-<img src="./screenshots/question.png" width="420">
+<b>Latest News</b><br><br>
+<img src="./src/main/resources/screenshots/news.png" width="420"/>
 </td>
 
 <td align="center">
+<b>Question Bank</b><br><br>
+<img src="./src/main/resources/screenshots/question.png" width="420"/>
+</td>
+</tr>
+
+<tr>
+<td align="center">
 <b>User Dashboard</b><br><br>
-<img src="./screenshots/user-dashboard.png" width="420">
+<img src="./src/main/resources/screenshots/user-dashboard.png" width="420"/>
+</td>
+
+<td align="center">
+<b>Borrow Records</b><br><br>
+<img src="./src/main/resources/screenshots/admin-borrow-manage.png" width="420"/>
 </td>
 </tr>
 </table>
@@ -763,36 +763,36 @@ Application Completed
 <tr>
 <td align="center">
 <b>Admin Dashboard</b><br><br>
-<img src="./screenshots/admin-dashboard.png" width="420">
+<img src="./src/main/resources/screenshots/admin-dashboard.png" width="420"/>
 </td>
 
 <td align="center">
 <b>Manage Books</b><br><br>
-<img src="./screenshots/admin-books-manage.png" width="420">
+<img src="./src/main/resources/screenshots/admin-books-manage.png" width="420"/>
 </td>
 </tr>
 
 <tr>
 <td align="center">
 <b>Manage Users</b><br><br>
-<img src="./screenshots/admin-user-manage.png" width="420">
+<img src="./src/main/resources/screenshots/admin-user-manage.png" width="420"/>
 </td>
 
 <td align="center">
 <b>Manage Articles</b><br><br>
-<img src="./screenshots/admin-articales-manage.png" width="420">
+<img src="./src/main/resources/screenshots/admin-articales-manage.png" width="420"/>
 </td>
 </tr>
 
 <tr>
 <td align="center">
 <b>Manage News</b><br><br>
-<img src="./screenshots/admin-news-manage.png" width="420">
+<img src="./src/main/resources/screenshots/admin-news-manage.png" width="420"/>
 </td>
 
 <td align="center">
 <b>Borrow Records</b><br><br>
-<img src="./screenshots/admin-borrow-manage.png" width="420">
+<img src="./src/main/resources/screenshots/admin-borrow-manage.png" width="420"/>
 </td>
 </tr>
 </table>
@@ -805,9 +805,7 @@ Application Completed
 - ✅ Laptop
 - ✅ Tablet
 - ✅ Mobile Friendly
-- ✅ Bootstrap 5 Responsive Layout
-
-
+- ✅ Responsive Bootstrap 5 Interface
 
 ---
 # 🚀 Installation & Setup
@@ -1203,9 +1201,9 @@ Passionate about building scalable web applications using modern Java technologi
 
 [![GitHub](https://img.shields.io/badge/GitHub-ahmedbaiginam--stack-181717?style=for-the-badge&logo=github)](https://github.com/ahmedbaiginam-stack)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmedbaig%20Inamdar-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmedbaig%20Inamdar-0A66C2?style=for-the-badge&logo=linkedin)](linkedin.com/in/ahmedbaig-s-inamdar-678628365/)
 
-📧 **Email:** your-email@example.com
+📧 **Email:** ahmedbaig.inamdar@gmail.com
 
 🌍 **GitHub Repository**
 
