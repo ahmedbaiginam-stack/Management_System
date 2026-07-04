@@ -2,487 +2,1027 @@
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-green?style=for-the-badge&logo=springboot)
-![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=for-the-badge&logo=mongodb)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?style=for-the-badge&logo=bootstrap)
-![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge)
+<img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=openjdk" />
+<img src="https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=springboot" />
+<img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react" />
+<img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb" />
+<img src="https://img.shields.io/badge/Spring_Security-JWT-success?style=for-the-badge&logo=springsecurity" />
+<img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap" />
 
-### A Full Stack Digital Library Management System built using Spring Boot, React.js & MongoDB
+<br><br>
+
+# 📖 Digital Library Management System
+
+### A Full-Stack Library Management Platform built using **Spring Boot**, **React.js**, **MongoDB**, **Spring Security**, and **JWT Authentication**
+
+The application enables users to browse digital resources, borrow books, read articles, explore story books, participate in discussions, and allows administrators to manage the complete digital library ecosystem through a secure dashboard.
 
 </div>
 
 ---
 
-# 📖 Overview
+# 📑 Table of Contents
 
-The **Digital Library Management System** is a full-stack web application that enables users to browse digital books, read articles, explore story books, borrow library resources, participate in question discussions, and stay updated with the latest news.
-
-The application also provides an **Admin Dashboard** for managing books, users, articles, news, borrow records, and library content.
+- Overview
+- Key Features
+- Technology Stack
+- System Architecture
+- Application Workflow
+- User Workflow
+- Admin Workflow
+- Project Structure
+- Database Design
+- REST APIs
+- Installation Guide
+- Screenshots
+- Future Improvements
+- Developer
+- License
 
 ---
 
-# ✨ Features
+# 📖 Project Overview
+
+The **Digital Library Management System** is a modern full-stack web application developed to simplify digital library operations.
+
+It provides a secure environment where users can:
+
+- Browse library books
+- Read digital articles
+- Explore story books
+- Stay updated with library news
+- Borrow digital resources
+- Track borrowing history
+- Participate in Question & Answer discussions
+
+Administrators have complete control over the platform and can manage books, users, articles, news, questions, and borrowing records through a dedicated admin dashboard.
+
+The application follows a **client-server architecture**, where the React frontend communicates with a Spring Boot REST API secured using JWT authentication.
+
+---
+
+# ✨ Key Features
 
 ## 👤 User Features
 
-- 🔐 Secure Login & Registration
-- 📚 Browse Digital Books
-- 🔍 Search Books
-- 📖 Read Books Online
-- 📰 Read Articles
-- 📘 Read Story Books
-- 📰 View Latest News
-- ❓ Question & Answer Forum
-- 📥 Borrow Books
-- 📥 Borrow Articles
-- 📥 Borrow Story Books
-- 📅 Due Date Tracking
-- 💰 Late Fine Notification (₹50/day)
-- 👤 User Dashboard
-- 📜 Borrow History
+- Secure Registration
+- Secure Login (JWT Authentication)
+- Browse Library Books
+- Search Books
+- Read Books Online
+- Read Articles
+- Read Story Books
+- View Latest News
+- Borrow Books
+- Borrow Articles
+- Borrow Story Books
+- Due Date Tracking
+- Automatic Fine Notification
+- User Dashboard
+- Borrow History
+- Question & Answer Discussion Forum
+- Responsive User Interface
 
 ---
 
 ## 👨‍💼 Admin Features
 
-- 📊 Admin Dashboard
-- 📚 Manage Books
-- 👥 Manage Users
-- 📰 Manage News
-- 📝 Manage Articles
-- 📖 Manage Borrow Records
-- ❓ Manage Questions
-- ✏️ Update Records
-- ❌ Delete Records
+- Secure Admin Login
+- Admin Dashboard
+- Manage Books
+- Manage Users
+- Manage News
+- Manage Articles
+- Manage Questions
+- Manage Borrow Records
+- Edit Library Resources
+- Delete Library Resources
+- Monitor Borrow Status
+- View Returned Items
+- Complete CRUD Operations
 
 ---
 
-# 🛠 Tech Stack
+# 🛠 Technology Stack
 
-| Technology | Description |
-|------------|-------------|
-| Java 17 | Backend Language |
-| Spring Boot | Backend Framework |
-| Spring Security | Authentication & Authorization |
-| JWT | Token Based Authentication |
-| MongoDB | NoSQL Database |
-| React.js | Frontend Framework |
-| React Router | Routing |
-| Axios | REST API Calls |
-| Bootstrap 5 | Responsive UI |
-| CSS3 | Custom Styling |
-| Maven | Dependency Management |
+| Layer | Technology |
+|---------|------------|
+| Programming Language | Java 17 |
+| Backend Framework | Spring Boot |
+| Security | Spring Security |
+| Authentication | JWT |
+| Database | MongoDB |
+| Frontend | React.js |
+| Routing | React Router DOM |
+| HTTP Client | Axios |
+| UI Framework | Bootstrap 5 |
+| Styling | CSS3 |
+| Build Tool | Maven |
+| Package Manager | npm |
 
 ---
 
 # 🏗 System Architecture
 
+```text
+                     +----------------------+
+                     |    React Frontend    |
+                     | (React + Bootstrap)  |
+                     +----------+-----------+
+                                |
+                                |
+                                ▼
+                     +----------------------+
+                     | Axios REST Requests  |
+                     +----------+-----------+
+                                |
+                                ▼
+                  +----------------------------+
+                  | Spring Boot REST API       |
+                  +-------------+--------------+
+                                |
+                Spring Security + JWT Filter
+                                |
+                                ▼
+                  +----------------------------+
+                  | Business Service Layer     |
+                  +-------------+--------------+
+                                |
+                                ▼
+                 +-----------------------------+
+                 | Spring Data MongoDB         |
+                 +-------------+---------------+
+                                |
+                                ▼
+                        MongoDB Database
 ```
-                React Frontend
-                      │
-                Axios REST API
-                      │
-            Spring Boot Backend
-                      │
-       Spring Security + JWT
-                      │
-              MongoDB Database
-```
-
 
 ---
-#🔄 How the System Works
+
+# 🔄 Complete Application Workflow
+
+```text
+                                START
+                                  │
+                                  ▼
+                     User Registration/Login
+                                  │
+                                  ▼
+                 Spring Security Authentication
+                                  │
+                            JWT Generation
+                                  │
+                                  ▼
+                    Role Based Authorization
+                  ┌───────────────────────────┐
+                  │                           │
+                  ▼                           ▼
+             ROLE_USER                  ROLE_ADMIN
+                  │                           │
+                  ▼                           ▼
+         User Dashboard               Admin Dashboard
+                  │                           │
+                  ▼                           ▼
+      Browse Library Resources      Manage Library Resources
+                  │                           │
+                  ▼                           ▼
+      Borrow Books / Articles        CRUD Operations
+      Borrow Story Books             Books
+                  │                  Users
+                  ▼                  Articles
+      Borrow Record Created          News
+                  │                  Questions
+                  ▼                  Borrow Records
+      User Dashboard Updated
+                  │
+                  ▼
+        Return Borrowed Resource
+                  │
+                  ▼
+         Fine Calculation (₹50/day)
+                  │
+                  ▼
+             Borrow Record Updated
+                  │
+                  ▼
+                  END
 ```
-                    USER
-                      │
-          Login / Register (JWT)
+
+---
+
+# 👤 User Workflow
+
+```text
+Register
+    │
+    ▼
+Login
+    │
+    ▼
+JWT Authentication
+    │
+    ▼
+Home Page
+    │
+    ▼
+Browse Books
+Browse Articles
+Browse Story Books
+Browse News
+Browse Questions
+    │
+    ▼
+Borrow Item
+    │
+    ▼
+Borrow Record Created
+    │
+    ▼
+User Dashboard
+    │
+    ▼
+Return Item
+    │
+    ▼
+Fine Calculation
+```
+
+---
+
+# 👨‍💼 Admin Workflow
+
+```text
+Admin Login
+      │
+      ▼
+JWT Authentication
+      │
+      ▼
+Admin Dashboard
+      │
+      ├───────────────┐
+      │               │
+      ▼               ▼
+Manage Books     Manage Users
+      │               │
+      ▼               ▼
+Manage News      Manage Articles
+      │               │
+      └───────────────┐
+                      ▼
+            Manage Questions
                       │
                       ▼
-              React Frontend
-                      │
-             Axios REST Requests
-                      │
-                      ▼
-             Spring Boot Backend
-                      │
-      Spring Security Authentication
-                      │
-                      ▼
-               Business Services
-      ┌─────────────┼─────────────┐
-      │             │             │
-  BookService  BorrowService  UserService
-      │             │             │
-      └─────────────┼─────────────┘
-                    │
-                    ▼
-          MongoDB Database
-                    │
-                    ▼
-          Response sent to React
+          Manage Borrow Records
 ```
 
 ---
 
-# 📂 Project Structure
+# ⭐ Highlights
 
-```
-Management_System
-│
-├── backend
-│   │
-│   ├── controller
-│   │     ├── AdminController
-│   │     ├── AuthController
-│   │     ├── UserController
-│   │     ├── BookController
-│   │     ├── FeatureController
-│   │     └── QuestionController
-│   │
-│   ├── service
-│   │     ├── BookService
-│   │     ├── UserService
-│   │     ├── BorrowService
-│   │     ├── NewsService
-│   │     ├── ArticleService
-│   │     ├── StoryBookService
-│   │     └── QuestionService
-│   │
-│   ├── repository
-│   │     ├── BookRepository
-│   │     ├── UserRepository
-│   │     ├── BorrowRepository
-│   │     ├── NewsRepository
-│   │     ├── ArticleRepository
-│   │     ├── StoryBookRepository
-│   │     └── QuestionRepository
-│   │
-│   ├── model
-│   │     ├── User
-│   │     ├── Book
-│   │     ├── BorrowRecord
-│   │     ├── Article
-│   │     ├── StoryBook
-│   │     ├── News
-│   │     └── Question
-│   │
-│   ├── security
-│   │     ├── JwtFilter
-│   │     ├── JwtUtil
-│   │     ├── SecurityConfig
-│   │     └── UserDetailsServiceImpl
-│   │
-│   └── application.properties
-│
-├── frontend
-│   │
-│   ├── components
-│   │     ├── Navbar
-│   │     ├── Footer
-│   │     └── Layout
-│   │
-│   ├── pages
-│   │     ├── HomePage
-│   │     ├── Login
-│   │     ├── Register
-│   │     ├── Books
-│   │     ├── BookReader
-│   │     ├── Articles
-│   │     ├── ArticleReader
-│   │     ├── StoryBooks
-│   │     ├── StoryReader
-│   │     ├── News
-│   │     ├── QuestionBank
-│   │     ├── UserDashboard
-│   │     ├── AdminDashboard
-│   │     ├── ManageBooks
-│   │     ├── ManageUsers
-│   │     ├── ManageNews
-│   │     ├── ManageArticles
-│   │     ├── ManageBorrowRecords
-│   │     └── ManageQuestions
-│   │
-│   ├── services
-│   │     ├── api.js
-│   │     └── libraryService.js
-│   │
-│   ├── styles
-│   │
-│   └── App.jsx
-│
-└── MongoDB
-```
+- Secure JWT Authentication
+- Role-Based Authorization
+- Spring Security Integration
+- RESTful API Architecture
+- Responsive React User Interface
+- MongoDB NoSQL Database
+- Borrow & Return Management
+- Automatic Fine Calculation
+- Question & Answer Discussion Module
+- Clean MVC Architecture
+- Fully Responsive Design
+- Easy to Extend & Maintain
 
 ---
-
-# 📷 Application Screenshots
-
-## 🏠 Home Page
-
-![Home Page](src/main/resources/screenshots/home.png)
-
----
-
-## 📚 Book Details
-
-![Book Details](src/main/resources/screenshots/book-details.png)
-
----
-
-## 📰 Articles
-
-![Articles](src/main/resources/screenshots/articles.png)
-
----
-
-## 📖 Story Books
-
-![Story Books](src/main/resources/screenshots/stories.png)
-
----
-
-## 📰 News
-
-![News](src/main/resources/screenshots/news.png)
-
----
-
-## ❓ Question Bank
-
-![Question Bank](src/main/resources/screenshots/question.png)
-
----
-
-## 👤 User Dashboard
-
-![User Dashboard](src/main/resources/screenshots/user-dashboard.png)
-
----
-
-## 👨‍💼 Admin Dashboard
-
-![Admin Dashboard](src/main/resources/screenshots/admin-dashboard.png)
-
----
-
-## 📚 Manage Books
-
-![Manage Books](src/main/resources/screenshots/admin-books-manage.png)
-
----
-
-## 👥 Manage Users
-
-![Manage Users](src/main/resources/screenshots/admin-user-manage.png)
-
----
-
-## 📰 Manage News
-
-![Manage News](src/main/resources/screenshots/admin-news-manage.png)
-
----
-
-## 📝 Manage Articles
-
-![Manage Articles](src/main/resources/screenshots/admin-articales-manage.png)
-
----
-
-## 📖 Borrow Records
-
-![Borrow Records](src/main/resources/screenshots/admin-borrow-manage.png)
-
----
-
-# 🔐 Authentication
-
-- JWT Authentication
-- Role Based Authorization
-- ROLE_ADMIN
-- ROLE_USER
-
----
-
-# 📡 REST API
-
-## Authentication
-
-```
-POST /api/auth/register
-POST /api/auth/login
-```
-
----
-
-## Books
-
-```
-GET    /api/books
-GET    /api/books/search
-POST   /api/user/borrow/book
-```
-
----
-
-## Articles
-
-```
-GET    /api/features/articles
-POST   /api/user/borrow/article
-```
-
----
-
-## Story Books
-
-```
-GET    /api/features/storybooks
-POST   /api/user/borrow/storybook
-```
-
----
-
-## News
-
-```
-GET /api/features/news
-```
-
----
-
-## Questions
-
-```
-GET    /api/questions
-POST   /api/questions
-POST   /api/questions/{id}/reply
-```
-
----
-
-## Borrow
-
-```
-GET    /api/user/borrowed-items
-POST   /api/user/return/{borrowId}
-```
-
----
-
-## Admin
-
-```
-GET     /api/admin/books
-POST    /api/admin/books
-PUT     /api/admin/books/{id}
-DELETE  /api/admin/books/{id}
-
-GET     /api/admin/users
-PUT     /api/admin/users/{id}
-DELETE  /api/admin/users/{id}
-
-GET     /api/admin/articles
-POST    /api/admin/articles
-PUT     /api/admin/articles/{id}
-DELETE  /api/admin/articles/{id}
-
-GET     /api/admin/news
-POST    /api/admin/news
-PUT     /api/admin/news/{id}
-DELETE  /api/admin/news/{id}
-
-GET     /api/admin/borrow-records
-DELETE  /api/admin/borrow-records/{id}
-```
-
----
-
-# ⚙️ Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/ahmedbaiginam-stack/Management_System.git
-```
-
----
-
-## Backend
-
-```bash
-cd backend
-
-mvn clean install
-
-mvn spring-boot:run
-```
-
-Runs on:
-
-```
-http://localhost:8080
-```
-
----
-
-## Frontend
-
-```bash
-cd frontend
-
-npm install
-
-npm run dev
-```
-
-Runs on:
-
-```
-http://localhost:5173
-```
-
----
-
-# 🚀 Future Improvements
-
-- 📱 Mobile Responsive UI Enhancements
-- 📧 Email Notifications
-- 💳 Online Fine Payment
-- ⭐ Ratings & Reviews
-- 📚 Book Reservation
-- 📈 Admin Analytics Dashboard
-- 🌙 Dark Mode
-- 🔔 Push Notifications
-
----
-
-# 👨‍💻 Developer
-
-**Ahmedbaig Inamdar**
-
-GitHub
-
-https://github.com/ahmedbaiginam-stack
-
-Repository
-
-https://github.com/ahmedbaiginam-stack/Management_System
-
----
-
-# 📄 License
-
-This project is developed for educational and learning purposes.
-
----
+# 📚 Digital Library Management System
 
 <div align="center">
 
-### ⭐ If you found this project useful, please consider giving it a Star on GitHub!
+<img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=openjdk" />
+<img src="https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=springboot" />
+<img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react" />
+<img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb" />
+<img src="https://img.shields.io/badge/Spring_Security-JWT-success?style=for-the-badge&logo=springsecurity" />
+<img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap" />
 
-Made with ❤️ using Spring Boot, React & MongoDB
+<br><br>
+
+# 📖 Digital Library Management System
+
+### A Full-Stack Library Management Platform built using **Spring Boot**, **React.js**, **MongoDB**, **Spring Security**, and **JWT Authentication**
+
+The application enables users to browse digital resources, borrow books, read articles, explore story books, participate in discussions, and allows administrators to manage the complete digital library ecosystem through a secure dashboard.
 
 </div>
+
+---
+
+# 📑 Table of Contents
+
+- Overview
+- Key Features
+- Technology Stack
+- System Architecture
+- Application Workflow
+- User Workflow
+- Admin Workflow
+- Project Structure
+- Database Design
+- REST APIs
+- Installation Guide
+- Screenshots
+- Future Improvements
+- Developer
+- License
+
+---
+
+# 📖 Project Overview
+
+The **Digital Library Management System** is a modern full-stack web application developed to simplify digital library operations.
+
+It provides a secure environment where users can:
+
+- Browse library books
+- Read digital articles
+- Explore story books
+- Stay updated with library news
+- Borrow digital resources
+- Track borrowing history
+- Participate in Question & Answer discussions
+
+Administrators have complete control over the platform and can manage books, users, articles, news, questions, and borrowing records through a dedicated admin dashboard.
+
+The application follows a **client-server architecture**, where the React frontend communicates with a Spring Boot REST API secured using JWT authentication.
+
+---
+
+# ✨ Key Features
+
+## 👤 User Features
+
+- Secure Registration
+- Secure Login (JWT Authentication)
+- Browse Library Books
+- Search Books
+- Read Books Online
+- Read Articles
+- Read Story Books
+- View Latest News
+- Borrow Books
+- Borrow Articles
+- Borrow Story Books
+- Due Date Tracking
+- Automatic Fine Notification
+- User Dashboard
+- Borrow History
+- Question & Answer Discussion Forum
+- Responsive User Interface
+
+---
+
+## 👨‍💼 Admin Features
+
+- Secure Admin Login
+- Admin Dashboard
+- Manage Books
+- Manage Users
+- Manage News
+- Manage Articles
+- Manage Questions
+- Manage Borrow Records
+- Edit Library Resources
+- Delete Library Resources
+- Monitor Borrow Status
+- View Returned Items
+- Complete CRUD Operations
+
+---
+
+# 🛠 Technology Stack
+
+| Layer | Technology |
+|---------|------------|
+| Programming Language | Java 17 |
+| Backend Framework | Spring Boot |
+| Security | Spring Security |
+| Authentication | JWT |
+| Database | MongoDB |
+| Frontend | React.js |
+| Routing | React Router DOM |
+| HTTP Client | Axios |
+| UI Framework | Bootstrap 5 |
+| Styling | CSS3 |
+| Build Tool | Maven |
+| Package Manager | npm |
+
+---
+
+# 🏗 System Architecture
+
+```text
+                     +----------------------+
+                     |    React Frontend    |
+                     | (React + Bootstrap)  |
+                     +----------+-----------+
+                                |
+                                |
+                                ▼
+                     +----------------------+
+                     | Axios REST Requests  |
+                     +----------+-----------+
+                                |
+                                ▼
+                  +----------------------------+
+                  | Spring Boot REST API       |
+                  +-------------+--------------+
+                                |
+                Spring Security + JWT Filter
+                                |
+                                ▼
+                  +----------------------------+
+                  | Business Service Layer     |
+                  +-------------+--------------+
+                                |
+                                ▼
+                 +-----------------------------+
+                 | Spring Data MongoDB         |
+                 +-------------+---------------+
+                                |
+                                ▼
+                        MongoDB Database
+```
+
+---
+
+# 🔄 Complete Application Workflow
+
+```text
+                                START
+                                  │
+                                  ▼
+                     User Registration/Login
+                                  │
+                                  ▼
+                 Spring Security Authentication
+                                  │
+                            JWT Generation
+                                  │
+                                  ▼
+                    Role Based Authorization
+                  ┌───────────────────────────┐
+                  │                           │
+                  ▼                           ▼
+             ROLE_USER                  ROLE_ADMIN
+                  │                           │
+                  ▼                           ▼
+         User Dashboard               Admin Dashboard
+                  │                           │
+                  ▼                           ▼
+      Browse Library Resources      Manage Library Resources
+                  │                           │
+                  ▼                           ▼
+      Borrow Books / Articles        CRUD Operations
+      Borrow Story Books             Books
+                  │                  Users
+                  ▼                  Articles
+      Borrow Record Created          News
+                  │                  Questions
+                  ▼                  Borrow Records
+      User Dashboard Updated
+                  │
+                  ▼
+        Return Borrowed Resource
+                  │
+                  ▼
+         Fine Calculation (₹50/day)
+                  │
+                  ▼
+             Borrow Record Updated
+                  │
+                  ▼
+                  END
+```
+
+---
+
+# 👤 User Workflow
+
+```text
+Register
+    │
+    ▼
+Login
+    │
+    ▼
+JWT Authentication
+    │
+    ▼
+Home Page
+    │
+    ▼
+Browse Books
+Browse Articles
+Browse Story Books
+Browse News
+Browse Questions
+    │
+    ▼
+Borrow Item
+    │
+    ▼
+Borrow Record Created
+    │
+    ▼
+User Dashboard
+    │
+    ▼
+Return Item
+    │
+    ▼
+Fine Calculation
+```
+
+---
+
+# 👨‍💼 Admin Workflow
+
+```text
+Admin Login
+      │
+      ▼
+JWT Authentication
+      │
+      ▼
+Admin Dashboard
+      │
+      ├───────────────┐
+      │               │
+      ▼               ▼
+Manage Books     Manage Users
+      │               │
+      ▼               ▼
+Manage News      Manage Articles
+      │               │
+      └───────────────┐
+                      ▼
+            Manage Questions
+                      │
+                      ▼
+          Manage Borrow Records
+```
+
+---
+
+# ⭐ Highlights
+
+- Secure JWT Authentication
+- Role-Based Authorization
+- Spring Security Integration
+- RESTful API Architecture
+- Responsive React User Interface
+- MongoDB NoSQL Database
+- Borrow & Return Management
+- Automatic Fine Calculation
+- Question & Answer Discussion Module
+- Clean MVC Architecture
+- Fully Responsive Design
+- Easy to Extend & Maintain
+
+---
+
+# 🔄 Application Workflow
+
+The Digital Library Management System follows a role-based workflow powered by **JWT Authentication**, **Spring Boot REST APIs**, **React.js**, and **MongoDB**.
+
+---
+
+## Overall Workflow
+
+```text
+                    START
+                      │
+                      ▼
+           User Registration / Login
+                      │
+                      ▼
+      Spring Security Authentication
+               (JWT Token)
+                      │
+          ┌───────────┴───────────┐
+          ▼                       ▼
+     ROLE_USER               ROLE_ADMIN
+          │                       │
+          ▼                       ▼
+   User Dashboard          Admin Dashboard
+          │                       │
+          ▼                       ▼
+ Browse Library            Manage Resources
+ Borrow Items              CRUD Operations
+ Return Items              View Reports
+          │
+          ▼
+ Fine Calculation
+          │
+          ▼
+         END
+```
+
+---
+
+# 👤 User Workflow
+
+### Step 1 – Register
+
+New users create an account by entering their details.
+
+```text
+Registration Form
+        │
+        ▼
+Spring Boot REST API
+        │
+        ▼
+Password Encryption (BCrypt)
+        │
+        ▼
+MongoDB
+```
+
+---
+
+### Step 2 – Login
+
+```text
+Login Page
+      │
+      ▼
+Spring Security
+      │
+      ▼
+Credential Verification
+      │
+      ▼
+JWT Token Generated
+      │
+      ▼
+Stored in Browser
+      │
+      ▼
+Access Protected Routes
+```
+
+---
+
+### Step 3 – Explore Library
+
+Users can browse multiple digital resources.
+
+- 📚 Books
+- 📖 Story Books
+- 📰 Articles
+- 🗞 News
+- ❓ Question Bank
+
+React fetches all resources through REST APIs.
+
+```text
+React UI
+    │
+    ├── Books API
+    ├── Articles API
+    ├── StoryBooks API
+    ├── News API
+    └── Questions API
+```
+
+---
+
+### Step 4 – Borrow Item
+
+Users may borrow:
+
+- Books
+- Articles
+- Story Books
+
+Before borrowing, a confirmation popup informs users about the late return fine.
+
+```text
+Select Resource
+       │
+       ▼
+Borrow Confirmation
+       │
+       ▼
+Borrow API
+       │
+       ▼
+Borrow Service
+       │
+       ▼
+Borrow Record Created
+       │
+       ▼
+Decrease Book Stock
+       │
+       ▼
+Update User Dashboard
+```
+
+---
+
+### Step 5 – User Dashboard
+
+Users can monitor all borrowed resources.
+
+Dashboard Information:
+
+- Borrowed Items
+- Borrow Date
+- Due Date
+- Return Date
+- Borrow Status
+- Fine Amount
+
+---
+
+### Step 6 – Return Item
+
+```text
+Return Button
+      │
+      ▼
+Locate Borrow Record
+      │
+      ▼
+Update Return Date
+      │
+      ▼
+Calculate Fine
+      │
+      ▼
+Increase Book Stock
+      │
+      ▼
+Update Borrow History
+```
+
+---
+
+### Step 7 – Fine Calculation
+
+Each borrowed resource has a due date.
+
+If returned late:
+
+```text
+Fine = Late Days × ₹50
+```
+
+Example
+
+```text
+Borrow Date : 1 July
+
+Due Date : 8 July
+
+Returned : 11 July
+
+Late Days : 3
+
+Fine : ₹150
+```
+
+---
+
+### Step 8 – Question Discussion Forum
+
+Users can ask questions and reply to existing discussions.
+
+```text
+Ask Question
+      │
+      ▼
+MongoDB
+      │
+      ▼
+Other Users
+      │
+      ▼
+Replies
+      │
+      ▼
+Discussion Thread
+```
+
+---
+
+# 👨‍💼 Admin Workflow
+
+After authentication, administrators access the Admin Dashboard.
+
+Modules available:
+
+- 📚 Manage Books
+- 👥 Manage Users
+- 📰 Manage News
+- 📝 Manage Articles
+- ❓ Manage Questions
+- 📖 Borrow Records
+
+---
+
+### Book Management
+
+```text
+Admin
+   │
+   ▼
+Manage Books
+   │
+CRUD Operations
+   │
+MongoDB
+```
+
+Features
+
+- Add Books
+- Update Books
+- Delete Books
+- Update Stock
+
+---
+
+### User Management
+
+```text
+Admin
+   │
+   ▼
+View Users
+   │
+Edit User
+   │
+Delete User
+```
+
+---
+
+### Article Management
+
+```text
+Admin
+   │
+   ▼
+Add / Edit / Delete Articles
+```
+
+---
+
+### News Management
+
+```text
+Admin
+   │
+   ▼
+Publish News
+   │
+Update News
+   │
+Delete News
+```
+
+---
+
+### Question Management
+
+```text
+Admin
+   │
+   ▼
+View Questions
+   │
+Delete Questions
+```
+
+---
+
+### Borrow Record Management
+
+```text
+Admin
+   │
+   ▼
+View Borrow Records
+   │
+Monitor Due Dates
+   │
+View Fine Details
+   │
+Delete Records
+```
+
+---
+
+# 🏗 System Architecture
+
+```text
+                React.js Frontend
+                       │
+                React Router DOM
+                       │
+                     Axios
+                       │
+                REST API Requests
+                       │
+        Spring Boot REST Controllers
+                       │
+             Business Service Layer
+                       │
+          Spring Data MongoDB
+                       │
+                    MongoDB
+```
+
+---
+
+# 🔐 Authentication Flow
+
+```text
+User Login
+      │
+      ▼
+Spring Security
+      │
+      ▼
+JWT Token
+      │
+      ▼
+Browser Local Storage
+      │
+      ▼
+Protected REST APIs
+```
+
+---
+
+# 📦 Database Collections
+
+```text
+users
+
+books
+
+articles
+
+storybooks
+
+news
+
+questions
+
+borrowrecords
+```
+
+---
+
+# 📌 Complete End-to-End Flow
+
+```text
+User Registration
+        │
+        ▼
+User Login
+        │
+        ▼
+JWT Authentication
+        │
+        ▼
+Browse Digital Library
+        │
+        ▼
+Borrow Resource
+        │
+        ▼
+Borrow Record Created
+        │
+        ▼
+User Dashboard
+        │
+        ▼
+Return Resource
+        │
+        ▼
+Fine Calculation
+        │
+        ▼
+Borrow Record Updated
+        │
+        ▼
+Admin Monitors System
+        │
+        ▼
+END
+```
