@@ -93,7 +93,7 @@ The application also provides an **Admin Dashboard** for managing books, users, 
 
 
 ---
-# How System Works
+#🔄 How the System Works
 ```
                     USER
                       │
