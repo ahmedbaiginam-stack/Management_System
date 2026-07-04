@@ -1129,3 +1129,122 @@ After running the project:
 7. Login as an Admin.
 8. Manage books, users, articles, news, questions, and borrow records.
 9. Verify CRUD operations and role-based access.
+---
+# 🤝 Contributing
+
+Contributions are welcome!
+
+If you'd like to improve this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature/YourFeature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch.
+
+```bash
+git push origin feature/YourFeature
+```
+
+5. Open a Pull Request.
+
+### Contribution Guidelines
+
+- Follow the existing project structure.
+- Write clean and readable code.
+- Keep commits meaningful.
+- Test your changes before submitting.
+- Update documentation if required.
+
+---
+
+# 🚀 Future Enhancements
+
+The following features can be added in future versions:
+
+- 📱 Mobile Application (Android/iOS)
+- 📧 Email Notifications
+- 💳 Online Fine Payment
+- ⭐ Book Ratings & Reviews
+- ❤️ Wishlist & Favorites
+- 📖 Book Reservation System
+- 🔍 Advanced Search & Filters
+- 📊 Admin Analytics Dashboard
+- 📅 Borrow History Reports
+- 📂 PDF Upload Support
+- 🔔 Push Notifications
+- 🌙 Dark Mode
+- 🌐 Multi-language Support
+- ☁️ Cloud Storage Integration
+- 📈 Library Usage Statistics
+
+---
+
+# 👨‍💻 Author
+
+<div align="center">
+
+## Ahmedbaig Inamdar
+
+**Full Stack Java Developer**
+
+Passionate about building scalable web applications using modern Java technologies and creating clean, responsive user interfaces.
+
+### 📬 Connect With Me
+
+[![GitHub](https://img.shields.io/badge/GitHub-ahmedbaiginam--stack-181717?style=for-the-badge&logo=github)](https://github.com/ahmedbaiginam-stack)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmedbaig%20Inamdar-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/)
+
+📧 **Email:** your-email@example.com
+
+🌍 **GitHub Repository**
+
+https://github.com/ahmedbaiginam-stack/Management_System
+
+</div>
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this project for educational and personal purposes.
+
+See the **LICENSE** file for more details.
+
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+- ⭐ Star this repository
+- 🍴 Fork this repository
+- 🐞 Report bugs
+- 💡 Suggest new features
+- 🤝 Contribute to the project
+
+Your support helps improve the project and motivates further development.
+
+---
+
+<div align="center">
+
+## 📚 Digital Library Management System
+
+**Built with ❤️ using Java • Spring Boot • Spring Security • React.js • MongoDB**
+
+### ⭐ Don't forget to Star this Repository!
+
+</div>
