@@ -91,6 +91,39 @@ The application also provides an **Admin Dashboard** for managing books, users, 
               MongoDB Database
 ```
 
+
+---
+# How System Works
+```
+                    USER
+                      │
+          Login / Register (JWT)
+                      │
+                      ▼
+              React Frontend
+                      │
+             Axios REST Requests
+                      │
+                      ▼
+             Spring Boot Backend
+                      │
+      Spring Security Authentication
+                      │
+                      ▼
+               Business Services
+      ┌─────────────┼─────────────┐
+      │             │             │
+  BookService  BorrowService  UserService
+      │             │             │
+      └─────────────┼─────────────┘
+                    │
+                    ▼
+          MongoDB Database
+                    │
+                    ▼
+          Response sent to React
+```
+
 ---
 
 # 📂 Project Structure
